@@ -91,7 +91,7 @@ export function BentoPricing() {
         </div>
         <div className="flex items-center gap-3 p-3">
           <Badge variant="secondary" className="bg-white/10 text-white border-white/20 font-open-sans-custom text-xs">
-            ПРЕМИУМ
+            ПРЕМИУМ СТУДИЯ
           </Badge>
           <Badge
             variant="outline"
@@ -114,10 +114,10 @@ export function BentoPricing() {
           </div>
           <ul className="text-gray-300 grid gap-2 text-xs lg:w-[70%] font-open-sans-custom">
             {[
-              "2 000 ₽ кредитов включено ежемесячно",
-              "Докупайте кредиты сверх месячного лимита",
-              "5x увеличенный лимит вложений",
-              "Импорт дизайнов из популярных инструментов",
+              "До 10 видеороликов в месяц",
+              "Комиксы любой длины и стиля",
+              "Брендированный визуал для соцсетей",
+              "Приоритетные правки и быстрые итерации",
             ].map((f, i) => (
               <li key={i} className="flex items-center gap-2">
                 <Check className="w-[1.05rem] h-[1.05rem] text-white flex-shrink-0" strokeWidth={3} />
@@ -130,49 +130,49 @@ export function BentoPricing() {
 
       <PricingCard
         titleBadge="СТАРТ"
-        priceLabel="0 ₽"
+        priceLabel="Бесплатно"
         features={[
-          "500 ₽ кредитов включено ежемесячно",
-          "Деплой приложений в облако",
-          "Визуальное редактирование",
-          "Синхронизация с Git",
+          "1 видеоролик или 5 страниц комикса",
+          "Базовые стили и персонажи",
+          "Водяной знак на материалах",
+          "Ознакомительный формат",
         ]}
         className="lg:col-span-3"
-        cta="Начать"
+        cta="Попробовать"
       />
 
       <PricingCard
-        titleBadge="КОМАНДА"
-        priceLabel="3 000 ₽"
-        priceSuffix="/чел/мес"
+        titleBadge="АВТОР"
+        priceLabel="5 000 ₽"
+        priceSuffix="/мес"
         features={[
-          "3 000 ₽ кредитов на участника ежемесячно",
-          "Единый биллинг и управление командой",
-          "Общие чаты и совместная работа",
+          "До 5 видеороликов в месяц",
+          "Комиксы до 20 страниц",
+          "Без водяных знаков",
         ]}
         className="lg:col-span-4"
       />
 
       <PricingCard
         titleBadge="БИЗНЕС"
-        priceLabel="10 000 ₽"
-        priceSuffix="/чел/мес"
-        features={["3 000 ₽ кредитов на участника ежемесячно", "Отключение обучения по умолчанию", "Полный доступ к API"]}
+        priceLabel="15 000 ₽"
+        priceSuffix="/мес"
+        features={["Неограниченный контент", "Брендбук и фирменный стиль", "Персональный менеджер"]}
         className="lg:col-span-4"
       />
 
       <PricingCard
-        titleBadge="КОРПОРАЦИЯ"
+        titleBadge="СТУДИЯ"
         priceLabel="По запросу"
         priceSuffix=""
         features={[
-          "Отключение обучения по умолчанию",
-          "SAML SSO",
-          "Приоритетный доступ",
-          "Персональная поддержка",
+          "Полный продакшн под ключ",
+          "Команда на вашем проекте",
+          "Эксклюзивные права на контент",
+          "SLA и приоритетная поддержка",
         ]}
         className="lg:col-span-8"
-        cta="Связаться"
+        cta="Обсудить проект"
       />
     </div>
   )
